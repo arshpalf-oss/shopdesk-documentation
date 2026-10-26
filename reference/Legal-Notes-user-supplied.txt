@@ -1,0 +1,460 @@
+THE GOOD VETS
+
+Billing, Invoicing & Inventory
+Master Implementation Prompt
+===========================================================
+
+Business rules • Transaction logic • GST safeguards • Security • Testing
+
+
+HOW TO USE THIS DOCUMENT
+------------------------
+
+Paste the master prompt below into your AI coding tool before asking it to build or modify The Good Vets. Ask the tool to inspect the repository and produce its gap analysis and implementation plan first. Review that plan before authorizing extensive changes to the database or financial logic.
+
+The prompt is designed to make the coding agent understand business rules, transaction integrity, invoice lifecycle, inventory movements, security, testing and scope boundaries. It does not replace review by a qualified Indian CA/GST practitioner or lawyer.
+
+
+MASTER IMPLEMENTATION PROMPT
+----------------------------
+
+
+1. Role and objective
+---------------------
+
+Act as a senior software architect, full-stack engineer, database architect, QA engineer, and India-focused billing software specialist.
+
+You are working on The Good Vets, a software platform serving veterinary clinics and related businesses. The current client requires an integrated billing, sales invoicing, inventory management, batch and expiry tracking, payment recording, and reporting system.
+
+Build a reliable, secure, auditable, maintainable commercial product. This is not merely a UI task. Understand and correctly implement business rules, tax calculations, transaction integrity, invoice lifecycle management, security controls, data retention, and error recovery.
+
+Before modifying the codebase:
+
+- Inspect the existing project structure and identify the frontend, backend, database, ORM, authentication and deployment architecture.
+- Read existing schemas, models, API routes, services, components and business logic.
+- Identify functionality that must be preserved, incomplete features, architectural problems and data-integrity risks.
+- Create an implementation plan before making extensive changes.
+- Use the existing architecture wherever practical; do not rewrite working modules or introduce a new stack without justification.
+- Do not claim a feature is complete until its implementation and tests have been verified.
+- If the existing implementation conflicts with these requirements, explain the conflict and propose a safe migration before changing production data.
+
+2. Fundamental business principles
+----------------------------------
+
+
+2.1 Financial records must be auditable
+---------------------------------------
+
+Finalized invoices must never be silently deleted or overwritten. Preserve invoice number, date/time, seller and customer details, product descriptions, quantities, HSN/SAC where applicable, prices, discounts, taxable values, tax rates and amounts, totals, payment records, inventory movements, timestamps and responsible users.
+
+Use controlled cancellation, correction, return, refund or credit-note workflows as appropriate. Where a legally valid correction requires a replacement document or another prescribed process, implement that process instead of assuming every correction can be made by editing the original invoice.
+
+
+2.2 Inventory and billing must remain consistent
+------------------------------------------------
+
+A successful sale must create the appropriate financial records and inventory movements together. A failed transaction must not leave the database partially updated. Prevent duplicate stock deductions, missing deductions, duplicate invoices from retries, incorrect reversals and historical totals changing after product configuration changes. Use database transactions, constraints and recovery logic.
+
+
+2.3 Separate software functionality from professional services
+--------------------------------------------------------------
+
+Do not represent the software as automatically replacing a chartered accountant, GST practitioner, statutory auditor, legal adviser, licensed veterinary professional or other legally required professional. Do not claim universal GST compliance or regulatory certification unless applicable requirements have actually been verified.
+
+
+3. India-specific tax and invoice requirements
+----------------------------------------------
+
+Implement tax logic based on applicable Indian GST legislation, rules, notifications and transaction-specific requirements. Do not invent legal requirements or hardcode unverified assumptions.
+
+Official references to consult:
+
+- CBIC GST resources: https://cbic-gst.gov.in/
+- GST Portal: https://www.gst.gov.in/
+- GST e-Invoice Portal: https://einvoice.gst.gov.in/
+When external research is available, verify relevant requirements against current official sources. If internet access is unavailable, identify requirements needing external professional verification rather than pretending unverified rules are current.
+
+
+3.1 Configurable tax engine
+---------------------------
+
+Implement a centralized backend tax-calculation service. Do not independently reimplement tax logic in the frontend, backend, PDF generator and reports. Support relevant treatments, including CGST/SGST for applicable intra-state supplies, IGST for applicable inter-state supplies, taxable and exempt supplies where applicable, nil-rated supplies where applicable, tax-inclusive and tax-exclusive pricing, discounts, appropriate rounding and supported special cases.
+
+Do not assume every product has the same GST rate. Do not determine IGST solely from the customer’s state without evaluating applicable place-of-supply and transaction rules. Use validated tax configuration and transaction context.
+
+
+3.2 Tax calculation example
+---------------------------
+
+For a product priced at ₹1,000 before tax with an illustrative GST rate of 12%, an applicable intra-state transaction would have CGST of ₹60 and SGST of ₹60, for a total of ₹1,120. An applicable inter-state transaction at the same illustrative total rate would have IGST of ₹120, also totaling ₹1,120. This is an arithmetic example only, not a declaration that a particular medicine or service attracts 12% GST.
+
+
+3.3 Product tax configuration
+-----------------------------
+
+Support product name, SKU/internal code, HSN where applicable, tax category, configured GST rate, tax-inclusive/exclusive pricing, unit of measurement, sale price, purchase price where needed, batch/expiry information where applicable, and active/inactive status. Validate classification according to applicable rules. Do not invent HSN codes or rates. Flag missing or invalid configuration for authorized review. Do not silently change tax classifications affecting finalized invoices.
+
+
+3.4 Invoice numbering
+---------------------
+
+Implement unique, concurrency-safe invoice numbering appropriate to applicable requirements. Prevent duplicate finalized identifiers, preserve identifiers after finalization, avoid reusing cancelled numbers unless specifically permitted, maintain required numbering sequence and financial-year behavior, and support required document series. Generate identifiers through a backend mechanism, not only in the frontend.
+
+
+3.5 Document types and required fields
+--------------------------------------
+
+Do not treat every sales document as a GST tax invoice. Support relevant document types such as draft sales document, GST tax invoice, bill of supply where applicable, credit note, debit note, payment receipt, and cancellation/return documentation where applicable. Determine correct document types and required fields from transaction facts and current law.
+
+Invoice templates should support applicable fields: supplier legal name, address, GSTIN where applicable, unique document number, date, recipient information as required, customer GSTIN where applicable, description, HSN/SAC where required, quantity and unit, taxable value, discounts, tax rates and amounts, place of supply where required, statutory declarations where applicable, total and other transaction-specific fields. Do not assume every field is mandatory for every transaction.
+
+
+3.6 E-invoicing and e-way bills
+-------------------------------
+
+Treat e-invoicing, IRN generation, signed QR codes, e-way bills and portal integrations as separate capabilities. Verify whether the client and transactions are covered, current thresholds/exclusions/notifications, document scope, and API requirements before implementing. Handle rejected requests, duplicate submissions, cancellations and network failures safely. Never fabricate statutory identifiers. If integration is excluded, document that limitation; excluding it does not remove a client's legal obligation where the rules apply.
+
+
+4. Sales billing workflow
+-------------------------
+
+
+Step 1 — Create a draft
+-----------------------
+
+Create a draft that is not treated as a finalized invoice.
+
+
+Step 2 — Select products
+------------------------
+
+Show product name, available quantity, batch, expiry, selling price, applicable HSN/tax, discount eligibility and warnings. Require eligible batch selection where batch tracking applies. Do not sell expired stock or permit negative stock unless a separately authorized rule explicitly permits it.
+
+
+Step 3 — Validate
+-----------------
+
+Validate product status, quantity, stock, batch eligibility, expiry, price, discounts, tax configuration, customer information, invoice type and applicable tax rules. Reject invalid transactions with understandable errors.
+
+
+Step 4 — Calculate totals
+-------------------------
+
+Use the centralized backend tax engine. Calculate quantities, unit prices, line discounts, taxable values, tax components, line totals, supported invoice-level discounts and final payable amount. Define discount order and use decimal-safe monetary arithmetic rather than binary floating point. Store money using an appropriate decimal type or equivalent exact representation and apply a consistent legally appropriate rounding policy.
+
+
+Step 5 — Finalize
+-----------------
+
+Within a safe transactional process: revalidate stock; verify the invoice has not already been finalized; reserve a unique identifier; save immutable snapshots of seller, customer, product, price and tax details; save lines and tax calculations; create inventory movements; update stock consistently; record payments received; set final status; record user and timestamps; commit. Roll back or use documented recovery if an essential operation fails. Use idempotency safeguards.
+
+
+Step 6 — Generate document
+--------------------------
+
+Generate the printable invoice/PDF from the finalized snapshot. Do not recalculate historical invoices using current product prices or tax settings. Reprinting must not create a new invoice or deduct stock again.
+
+
+Step 7 — Record payment
+-----------------------
+
+Support only agreed payment functionality. Possible statuses include unpaid, partially paid, paid, partially refunded and refunded where applicable. Invoice creation is not proof of payment.
+
+
+5. Inventory and batch management
+---------------------------------
+
+
+5.1 Inventory movement records
+------------------------------
+
+Maintain a stock-movement ledger. Every stock change must have a traceable reason, such as purchase receipt, sales deduction, sales return, purchase return, adjustment, expiry write-off, damaged goods, internal consumption or wastage. Record product, batch, quantity, movement type, reference document, location if supported, responsible user, timestamp and reason where relevant. Do not let ordinary users alter historical movements; corrections should create auditable compensating movements.
+
+
+5.2 Stock calculation
+---------------------
+
+Maintain a consistent relationship between opening stock, purchases, sales, returns, adjustments, consumption, wastage and closing stock. Prevent duplicate deductions and movements. If balances are cached, provide reconciliation against the underlying ledger.
+
+
+5.3 Batch and expiry
+--------------------
+
+Track batch number, product, expiry date, received and available quantities, supplier/purchase reference where relevant, and stock status. Prevent sales of expired products. Support FEFO (first-expiring, first-out) where appropriate. Do not automatically restock every return; inspect/classify returned goods according to the client's approved procedure.
+
+
+6. Cancellations, returns, credit notes and refunds
+---------------------------------------------------
+
+
+6.1 Draft cancellation
+----------------------
+
+An unfinalized draft may be discarded under the draft-retention policy. Draft deletion must not affect finalized records.
+
+
+6.2 Finalized invoice cancellation
+----------------------------------
+
+Require appropriate authorization and record original reference, reason, responsible user, timestamp, status and any resulting inventory/payment adjustment. Apply statutory deadlines and procedures. Do not assume a finalized invoice can always be cancelled; use the legally appropriate correction process where needed. Never silently delete it.
+
+
+6.3 Sales returns
+-----------------
+
+Link returns to the original sale where applicable. Record original invoice, product, quantity, batch, reason, condition, restock decision, adjustment/refund amount, tax treatment and responsible user. Do not automatically add all returned goods to sellable stock.
+
+
+6.4 Credit/debit notes and refunds
+----------------------------------
+
+Implement credit/debit notes only according to validated legal and business requirements, link them to originating transactions where appropriate, preserve the original invoice and use appropriate numbering. A refund record is not a substitute for a required tax document. Record refund amount, date, method, reference, status, reason and responsible user. Prevent duplicate refunds and refunds exceeding the applicable refundable balance. Do not assume a refund always changes GST liability in the same way.
+
+
+7. Payment management
+---------------------
+
+Support agreed methods such as cash, UPI, bank transfer, card or configured alternatives. Manual payment recording may be sufficient initially. Record payment ID, invoice, amount, date/time, method, transaction reference where available, status and responsible user. Support partial payments where required, calculate outstanding balances from valid records, prevent duplicate payment entries, and do not treat failed/pending digital payments as completed receipts. Never store card PINs, CVVs, banking passwords or prohibited payment credentials. Add a payment gateway only if explicitly required and follow the provider's security rules.
+
+
+8. Reporting and reconciliation
+-------------------------------
+
+
+8.1 Sales reports
+-----------------
+
+Provide sales by date, product, invoice, customer where applicable and user; cancelled sales; returns; discounts; and payment-method totals. Clearly distinguish gross sales, returns, discounts, taxes and net figures. Define every metric.
+
+
+8.2 Tax-oriented reports
+------------------------
+
+Where supported, summarize taxable values, rates, CGST, SGST, IGST, applicable exempt/other categories, credit/debit note adjustments and relevant cancelled documents. Reports must reconcile with finalized source documents and adjustments. Label them operational exports or tax-preparation aids unless validated for a broader compliance purpose. Do not call a report an official GST return unless it meets the relevant requirements.
+
+
+8.3 Inventory reports
+---------------------
+
+Provide current and batch-wise stock, expiring/expired products, movements, sales deductions, returns, adjustments, wastage and reconciliation differences. Support quantity-only reports without monetary valuation where required, and enforce permissions for financial valuations.
+
+
+8.4 Reconciliation
+------------------
+
+Test that invoice lines match invoice totals; totals reconcile with tax components; payment and refund reports match source records; inventory movements match sales and returns; and daily reports reconcile with underlying transactions. Avoid independently maintained totals that can silently diverge.
+
+
+9. Database and architecture
+----------------------------
+
+Inspect and adapt the existing schema rather than creating duplicate tables. Use appropriate relational constraints, foreign keys, transactions and migrations. The logical model may need organizations/clinics, users/roles, customers, products, tax classifications, suppliers, batches, purchases/receipts where supported, sales, invoice lines, tax snapshots, payments, refunds, returns, credit/debit notes, inventory movements, audit logs, number sequences and business settings.
+
+Use stable identifiers, unique constraints for finalized invoice identifiers, valid relationships, appropriate quantity/money constraints, valid document states and protection against duplicate processing. Use concurrency-safe stock validation and numbering. Do not trust frontend validation. Do not store passwords/secrets in plaintext or expose production credentials in client code. Keep migrations version-controlled and reversible where practical. Never reset/truncate production data to simplify a migration; document impact before any destructive change.
+
+
+10. Audit logging and access control
+------------------------------------
+
+Implement backend-enforced role-based permissions, adapting roles to the application. Possible roles include owner/admin, manager, billing operator, inventory operator and read-only reporting user. Define separate permissions for drafts, finalization, discounts, tax settings, cancellations, credit notes, refunds, stock adjustments, reports, exports and user management.
+
+Audit relevant invoice, cancellation, return, refund, configuration, stock, permission, export and administrative actions. Record actor, timestamp, affected record, action and appropriate before/after values. Protect logs from ordinary-user modification. Do not log passwords, tokens or unnecessary sensitive information. Test cross-clinic isolation if the product supports multiple clinics.
+
+
+11. Security, privacy and retention
+-----------------------------------
+
+Implement secure authentication and authorization, HTTPS in deployment, secret management, suitable protection of data in transit/at rest, input validation, protection against common web vulnerabilities, rate limiting where appropriate, secure sessions/tokens, safe file uploads, database access controls, backups, audit logging and monitoring.
+
+Determine data ownership, access rights, retention and deletion rules. Preserve records required by law or contract; delete only through a controlled lawful process. Test backup restoration. Assess applicable Indian data-protection requirements and their current commencement status. Do not claim full privacy-law compliance without an appropriate assessment.
+
+
+12. Error handling and recovery
+-------------------------------
+
+Handle database outages, network failure after commit, duplicate requests, concurrent sales of the last unit, PDF-generation failures, payment-provider timeouts if integrated, invalid tax settings, failed stock adjustments, interrupted migrations and backup failures.
+
+For each critical operation, define the successful outcome, failure states, rollback/recovery, safe retry behavior, duplicate-side-effect prevention, investigation logs and user-facing errors. If invoice finalization succeeds but PDF generation fails, allow PDF retry without creating another invoice or deducting stock again. Use idempotency keys or equivalent controls. Do not blindly retry non-idempotent financial operations.
+
+
+13. Backups and disaster recovery
+---------------------------------
+
+Document backup frequency, retention, location, access controls, encryption where appropriate, restoration procedure, recovery-point objective and recovery-time objective. Protect backups from the same failure or unauthorized access that could affect the primary database. Test restoration periodically. Verify the provider's actual backup configuration rather than assuming it is sufficient. Provide business-data export where appropriate.
+
+
+14. Contractual and product boundaries
+--------------------------------------
+
+Initial scope: sales billing, invoicing, inventory integration, payment recording and operational reporting. Unless separately agreed, exclude full accounting/general ledger, automated GST return filing, comprehensive GST portal integration, automated e-invoicing, e-way bill generation, statutory audit, tax advice, legal representation, payment custody/processing and regulatory licensing services.
+
+Do not implement excluded capabilities as incomplete placeholders that appear operational. For requests outside scope, document requirements, assess applicable rules, define scope and obtain approval before implementation.
+
+Provide configuration for legal business name, address, GSTIN, tax registrations, product classifications, HSN/SAC, rates/treatments, invoice settings and other required information. Validate and warn where possible. Do not assume client-supplied information is correct; flag classifications requiring professional judgment.
+
+The software provider remains responsible for agreed functionality, appropriate engineering care, covered defects, and agreed security/recovery measures. Scope exclusions do not excuse defective software or override applicable law.
+
+
+15. Testing requirements
+------------------------
+
+
+15.1 Tax calculations
+---------------------
+
+Test supported rates, CGST/SGST, IGST, inclusive/exclusive prices, line/invoice discounts, precision, rounding, zero-tax/exempt categories where supported, missing/invalid classifications and configuration changes after finalization. Assert known expected results.
+
+
+15.2 Invoices
+-------------
+
+Test drafts, finalization, sequential numbering, concurrent creation, duplicate prevention, reprinting, cancellation, returns, credit/debit notes where supported, historical preservation and financial-year transitions where applicable.
+
+
+15.3 Inventory
+--------------
+
+Test one/multiple-unit sales, insufficient stock, expired batches, multiple batches, FEFO where enabled, concurrent sales of the last unit, restockable/non-restockable returns, wastage, adjustments, duplicate movements and rollback.
+
+
+15.4 Payments
+-------------
+
+Test full/partial/multiple payments, unpaid invoices, failed recording, duplicate requests, refunds, partial refunds, over-refund prevention and outstanding balances.
+
+
+15.5 Security
+-------------
+
+Test unauthorized invoice access, cancellation, tax changes, stock adjustments, cross-clinic access, privilege escalation, insecure exports, sensitive-data exposure and authentication failures.
+
+
+15.6 Reconciliation
+-------------------
+
+Verify invoice totals, tax summaries, payment reports, refunds, inventory movements, stock balances, sales summaries, cancellations and returns against source records.
+
+Do not declare completion merely because the application does not crash. Use known expected results and report tests that could not be executed.
+
+
+16. User interface requirements
+-------------------------------
+
+Design for a busy clinic/pharmacy counter: fast product search, clear quantities/prices, visible batch/expiry warnings, readable tax breakdowns, clear totals, minimal steps, keyboard-friendly billing, understandable errors, confirmation for consequential actions, easy reprinting, clear payment status and responsive layout where required. Prevent accidental duplicate finalization. Enforce backend authorization. The UI must reflect actual backend transaction status.
+
+
+17. Tax-rule and maintenance strategy
+-------------------------------------
+
+Centralize legal constants and tax assumptions. Document supported invoice types, tax treatments, validation rules, effective dates where required, tax-engine version, calculation changes, regression tests and unimplemented compliance requirements. New transactions must use applicable configuration for their transaction date and circumstances. Historical finalized invoices must preserve their original legally relevant snapshots. Never silently recalculate historical invoices using updated rates. Assess regulatory changes, update the system and run regression tests before deployment; do not promise automatic future compliance.
+
+
+18. AI coding agent implementation workflow
+-------------------------------------------
+
+
+Phase 1 — Repository inspection
+-------------------------------
+
+- Identify frameworks, database, ORM, authentication, inventory/billing modules, invoice generator, stock movement logic, reporting, deployment and test coverage. Do not start by replacing the application.
+
+Phase 2 — Gap analysis
+----------------------
+
+- Create a table showing requirement, existing implementation, missing functionality, risk, proposed change, dependencies and required tests. Identify requirements needing clarification.
+
+Phase 3 — Architecture and transaction design
+---------------------------------------------
+
+- Document data model, invoice lifecycle, stock movement lifecycle, tax flow, payment lifecycle, return/refund lifecycle, cancellation, authorization, audit logs and failure recovery. Explain database consistency on failure/retry.
+
+Phase 4 — Implementation
+------------------------
+
+- Implement in reviewable increments using reusable backend services, centralized tax calculations, transactions, idempotency, validation, constraints, consistent errors, versioned migrations and automated tests. Follow existing conventions unless they create material reliability/security problems.
+
+Phase 5 — Testing
+-----------------
+
+- Run relevant unit, integration, API, database, authorization, regression, build, lint and type checks. Report tests that could not be run. Never claim tests passed unless executed.
+
+Phase 6 — Final verification
+----------------------------
+
+- Verify no silent invoice deletion, no duplicate numbering, validated tax configuration, historical snapshot preservation, no duplicate movements, safe failure behavior, payment reconciliation, controlled returns/cancellations, backend permissions, protected records and reconciled reports.
+
+Phase 7 — Final report
+----------------------
+
+- Report implemented features, changed files/modules, migrations, business rules, security safeguards, actual test results, limitations, CA/GST verification needs, legal review needs, deployment/configuration, backup/recovery and remaining production work. Do not conceal failures or incomplete work.
+
+19. Non-negotiable rules
+------------------------
+
+Never silently delete a finalized invoice.
+Never allow duplicate finalized invoice numbers within the required numbering scope.
+Never calculate GST using an unverified hardcoded assumption for every product.
+Never trust frontend tax calculations as authoritative.
+Never deduct stock twice for one successful sale.
+Never let a failed sale leave unexplained partial inventory or financial updates.
+Never treat an invoice as proof of payment.
+Never automatically treat every returned product as sellable stock.
+Never silently alter historical finalized invoices when prices or tax rates change.
+Never fabricate statutory identifiers, IRNs, QR codes or compliance references.
+Never expose secrets or sensitive customer data in frontend code or logs.
+Never claim compliance with unverified legal requirements.
+Never reset production data to simplify implementation.
+Never mark an untested feature production-ready.
+Never implement financial logic without understanding its effect on related modules.
+Never bypass authorization for administrative or financial operations.
+Never use floating-point arithmetic where exact monetary arithmetic is required.
+Never treat cancellation, return, refund and credit-note issuance as the same operation.
+Never run destructive migrations without assessing existing data.
+Never compromise data integrity merely to make the UI appear faster or simpler.
+
+20. Final instruction
+---------------------
+
+Begin by inspecting the existing repository and identifying its actual architecture. Do not immediately generate large amounts of code. First produce a concise architecture assessment and prioritized implementation plan. Review requirements that depend on the client's GST status, product classification, transaction type, legal obligations or missing business decisions. Do not invent answers; identify missing information and implement safe configuration/validation where possible.
+
+Clearly distinguish between: implemented and tested; implemented but not fully tested; partially implemented; not implemented; and requiring external professional verification.
+
+The goal is a reliable billing, invoicing and inventory system for The Good Vets—not merely an attractive interface that appears to work. Prioritize financial correctness, inventory integrity, auditability, security, maintainability and clearly defined business responsibilities.
+
+
+RECOMMENDED IMPLEMENTATION ORDER
+--------------------------------
+
+Product and tax configuration — validated HSN, tax rates and pricing.
+Sales billing — product selection, quantities, discounts and totals.
+Invoice generation — unique numbering, finalized records and PDF output.
+Inventory integration — batch-aware stock deduction and transaction integrity.
+Payments — full and partial payments, if required.
+Returns and cancellations — controlled corrections and stock adjustments.
+Reports and audit logs — sales summaries, tax-oriented exports and traceability.
+Security and testing — permissions, backups, reconciliation and production-readiness checks.
+
+PRE-PRODUCTION CHECKLIST
+------------------------
+
+- ☐ Have invoice requirements reviewed by a qualified Indian CA/GST practitioner.
+- ☐ Obtain written client approval of GSTIN, product classifications, tax rates and business details.
+- ☐ Document exclusions: GST return filing, tax advice and formal auditing unless separately agreed.
+- ☐ Test invoice generation, stock deduction, returns, cancellation and payments together.
+- ☐ Preserve finalized invoice history and maintain audit logs.
+- ☐ Configure authentication, access controls, backups and recovery.
+- ☐ Have an Indian lawyer review the commercial service agreement.
+
+IMPORTANT NOTE
+--------------
+
+This document is a software implementation and product-risk specification, not a formal legal or tax opinion. A qualified Indian CA/GST practitioner should verify the actual invoice formats, tax treatments and compliance requirements applicable to the client's products and transactions. An Indian lawyer should review the service agreement and liability provisions.
+
+
+SUMMARY
+-------
+Purpose | Guide an AI coding tool before it builds or modifies the software.
+
+Initial scope | Sales billing, invoicing, inventory integration, payment recording and operational reporting.
+
+Important boundary | Software implementation guidance; not legal or tax certification.

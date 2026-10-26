@@ -1,0 +1,86 @@
+[
+  {
+    "name": "dpdp-rules",
+    "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+    "retrieved": "2026-10-26",
+    "bytes": 2492944,
+    "sha256": "eabc7d05e013144615d78ddc0e8b9c9aac1920e814f4fad38ce6560951f5aa08",
+    "pdf_pages": 41,
+    "pages_scanned": 41,
+    "matched_pages": [
+      24,
+      26,
+      27
+    ],
+    "excerpts_file": "dpdp-rules-excerpts.txt",
+    "status": "retrieved"
+  },
+  {
+    "name": "income-rules-2026",
+    "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf",
+    "retrieved": "2026-10-26",
+    "bytes": 10019228,
+    "sha256": "30bc85bf9d3ff23f378d5ddd2ca1d2e3d223134471fc8163aa5e2feecacb7e51",
+    "pdf_pages": 976,
+    "pages_scanned": 120,
+    "matched_pages": [
+      37
+    ],
+    "excerpts_file": "income-rules-2026-excerpts.txt",
+    "status": "retrieved",
+    "subsequent_review": {
+      "full_rule_pages": [
+        37,
+        38
+      ],
+      "adjacent_page_saved": 39,
+      "excerpts_file": "income-rules-2026-rule46.txt",
+      "note": "The complete rule 46, not only its opening page, was read."
+    }
+  },
+  {
+    "name": "income-act-2025",
+    "url": "https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf",
+    "retrieved": "2026-10-26",
+    "status": "not_retrieved",
+    "error_type": "HTTPError",
+    "message": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "drugs-rules",
+    "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules,%201945%20(1).pdf",
+    "retrieved": "2026-10-26",
+    "bytes": 6483660,
+    "sha256": "c33efe60e4e017162f797cd912bdbae7491958eaf6fbfec38aa3cb444a1f7a2d",
+    "pdf_pages": 859,
+    "pages_scanned": 75,
+    "matched_pages": [],
+    "excerpts_file": "drugs-rules-excerpts.txt",
+    "status": "retrieved",
+    "subsequent_review": {
+      "normalized_scan_pages": 95,
+      "excerpt_pages": [
+        42,
+        43,
+        46
+      ],
+      "compilation_heading": "Amended through G.S.R. 823(E), 17 November 2022, with stated 1 August 2023 effect; current amendments require review.",
+      "note": "Initial marker scan missed spacing/OCR variants. Excerpts were subsequently regenerated."
+    }
+  },
+  {
+    "name": "cert-in",
+    "url": "https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf",
+    "retrieved": "2026-10-26",
+    "bytes": 434961,
+    "sha256": "202c2f3953d792dcfb3ecb3634fc82ab75437ee596de89b8d59a211e8e42431f",
+    "pdf_pages": 8,
+    "pages_scanned": 8,
+    "matched_pages": [
+      2,
+      3
+    ],
+    "excerpts_file": "cert-in-excerpts.txt",
+    "status": "retrieved"
+  }
+]

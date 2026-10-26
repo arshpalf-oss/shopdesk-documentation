@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1230" viewBox="0 0 1600 1230" role="img" aria-labelledby="title desc">
+<title id="title">shop desk proposed Vercel and Atlas architecture</title>
+<desc id="desc">Browsers use a same-origin authenticated Node API on Vercel. Tenant-scoped services transact with Atlas. Authenticated Cron consumes durable leased jobs. Private storage and logs require verified regional arrangements. Optional external providers are not called inside transactions.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#667B99"/></marker></defs>
+<rect width="1600" height="1230" fill="#F4F7FB"/>
+<text x="64" y="81" font-family="DejaVu Sans,Arial,sans-serif" font-size="47" font-weight="700" fill="#16253C">shop desk</text>
+<text x="66" y="125" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#42566D">PROPOSED ARCHITECTURE  •  not a deployed application</text>
+<rect x="60" y="158" width="1480" height="120" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="92" y="202" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#244FA4">CLINIC BROWSERS</text>
+<text x="92" y="252" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="400" fill="#16253C">Owner  /  named cashier  /  inventory operator  /  accountant</text>
+<polyline points="800,280 800,330" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="828" y="309" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#42566D">HTTPS • same origin • session + CSRF</text>
+<rect x="60" y="333" width="1480" height="292" rx="18" fill="#EAF0FD" stroke="#AFC4EC" stroke-width="2"/>
+<text x="92" y="377" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#244FA4">VERCEL  —  JAVASCRIPT / NODE.JS</text>
+<rect x="90" y="406" width="398" height="179" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="112" y="457" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="700" fill="#16253C">React / Vite</text>
+<text x="112" y="502" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="400" fill="#16253C">Readable, role-scoped UI</text>
+<text x="112" y="539" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#42566D">No secrets or Atlas access</text>
+<rect x="522" y="406" width="988" height="179" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="546" y="457" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="700" fill="#16253C">Node API → validation → domain services</text>
+<text x="546" y="502" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="400" fill="#16253C">Trusted tenant + branch + permissions on every path</text>
+<text x="546" y="539" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#42566D">Immutable snapshots • exact money • atomic posting</text>
+<polyline points="489,494 518,494" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<polyline points="1040,626 1040,677" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="1063" y="657" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#42566D">TLS + bounded pooled connections</text>
+<rect x="60" y="683" width="1480" height="224" rx="18" fill="#EAF7F3" stroke="#A2D7C6" stroke-width="2"/>
+<text x="92" y="733" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="700" fill="#087F72">MONGODB ATLAS</text>
+<text x="92" y="787" font-family="DejaVu Sans,Arial,sans-serif" font-size="29" font-weight="400" fill="#16253C">Tenant masters + drafts | documents + allocations | stock + GL</text>
+<text x="92" y="834" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="400" fill="#16253C">Audit | operation idempotency | effective rules | durable outbox</text>
+<text x="92" y="873" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#42566D">Shared collections need enforced tenant repositories; no native row-level tenant security.</text>
+<rect x="60" y="958" width="485" height="166" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="84" y="1006" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#16253C">Vercel Cron → job handler</text>
+<text x="84" y="1047" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#16253C">Authenticated • durable leases</text>
+<text x="84" y="1083" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#42566D">Small chunks • retry-safe</text>
+<polyline points="300,957 300,915" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="575" y="958" width="463" height="166" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="599" y="1004" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16253C">Private files + backups/logs</text>
+<text x="599" y="1047" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#16253C">Verified storage / retention</text>
+<text x="599" y="1083" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#42566D">India copies where required</text>
+<polyline points="807,954 807,915" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1068" y="958" width="472" height="166" rx="18" fill="#FFFFFF" stroke="#D5DFEB" stroke-width="2"/>
+<text x="1090" y="1004" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16253C">Approved optional providers</text>
+<text x="1090" y="1046" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#16253C">IRP / signing / email / gateway</text>
+<text x="1090" y="1082" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#42566D">Outside retriable DB callbacks</text>
+<polyline points="1305,954 1305,915" fill="none" stroke="#667B99" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="64" y="1182" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#42566D">No persistent local database, hidden always-on worker, fake statutory IDs or automatic compliance claim.</text>
+</svg>

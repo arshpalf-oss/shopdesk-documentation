@@ -1,0 +1,228 @@
+{
+  "scope": "Documentation structural/integrity QA only; not SaaS runtime tests, browser/Word rendering, cloud deployment or legal certification.",
+  "date": "2026-10-26",
+  "checks": [
+    {
+      "check": "All required main guides",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Original attachment exact SHA-256",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Plain-text prompt identical",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "40 unique future acceptance scenarios",
+      "status": "PASS",
+      "details": "40"
+    },
+    {
+      "check": "All 20 attachment sections mapped",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "24 legal-control groups",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Summary",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Day book",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Products",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Categories",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Cashiers",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Payments",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: GST",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: GSTR-1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: GSTR-3B",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Stock",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Receivables",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Core report retained: Stock log",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX ZIP CRC",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX includes all 8 chapters",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX includes last master-prompt instruction",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX all scenario rows present",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX embeds architecture image",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX repeats table header rows",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX no macro payload",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "DOCX reopens with python-docx",
+      "status": "PASS",
+      "details": "838 paragraphs"
+    },
+    {
+      "check": "DOCX long-prose preservation: README.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: PRODUCT_OVERVIEW_AND_USER_GUIDE.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: ARCHITECTURE_AND_BUILD_GUIDE.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: INDIA_LEGAL_AND_RELEASE_MATRIX.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: TEST_ACCEPTANCE_AND_TRACEABILITY.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: VERCEL_ATLAS_OPERATIONS.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "DOCX long-prose preservation: MASTER_IMPLEMENTATION_PROMPT.md",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "check": "HTML has 8 chapters",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "HTML self-contained assets",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "HTML has no network functions",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "HTML all chapter anchors resolve",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "HTML copy prompt exact",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "SVG valid XML",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Diagram raster dimensions",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "HTML inline JavaScript syntax",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Protected release unchanged: shop-desk-updated.zip",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Protected release unchanged: shop-desk-mongodb.zip",
+      "status": "PASS",
+      "details": ""
+    }
+  ],
+  "count": 43,
+  "post_publication_recheck": "Rechecked final regenerated DOCX XML/CRC, HTML raw prompt, TXT equality and attachment hash after final README/source updates.",
+  "html_interactions": {
+    "count": 7,
+    "scope": "Execution of the actual embedded HTML JavaScript against a minimal DOM mock; not a browser/CSS, Word, SaaS runtime, cloud or legal test.",
+    "results_file": "html-interaction-tests.json"
+  }
+}

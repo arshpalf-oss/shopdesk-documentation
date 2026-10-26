@@ -1,0 +1,80 @@
+PDF PAGE 2
+Page 2 of 8 
+ 
+And whereas, as per provisions of sub-section (6) of section 70B of the IT Act, 
+2000, CERT-In is empowered and competent to call for information and give 
+directions to the service providers, intermediaries, data centres, body corporate 
+and any other person for carrying out the activities enshrined in sub -section (4) 
+of section 70B of the IT Act, 2000.  
+  
+And whereas, various instances of cyber incidents and cyber security incidents 
+have been and continue to be reported from time to time and in order to coordinate 
+response activities as well as emergency measures with respect to cyber security 
+incidents, the requisite information is either sometime not found available or 
+readily not available with service providers/data centres/body corporate and the 
+said primary information is essential to carry out the analysis , investigation and 
+coordination as per the process of law.   
+ 
+And whereas , it is considered expedient in the interest of the sovereignty or 
+integrity of India, defence of India, security of the state, friendly relations with 
+foreign states or public order o r for preventing incitement to the commission of 
+any cognizable offence using computer resource or for handling of any cyber 
+incident, that following directions are issued to augment and strengthen the cyber 
+security in the country:  
+(i) All service provider s, intermediaries, data centre s, body corporate and 
+Government organisation s shall connect to the Network Time Protocol 
+(NTP) Server of National Informatics Centre (NIC) or National Physical 
+Laboratory (NPL) or with NTP servers traceable to these NTP servers, for 
+synchronisation of all their ICT systems clocks.  Entities having ICT 
+infrastructure spanning multiple geographies may also use accurate and 
+standard time source other than NPL and NIC, however it is to be ensured 
+that their time source shall not deviate from NPL and NIC. 
+(ii) Any service provi der, intermediary, data centre, body corporate  and 
+Government organisation  shall mandatorily report cyber incidents as 
+mentioned in Annexure  I to CERT -In within 6 hours  of noticing such 
+incidents or being brought to notice about such incidents. The incidents can 
+be reported to CERT-In via email (incident@cert-in.org.in), Phone (1800-
+11-4949) and Fax (1800 -11-6969). The details regarding methods and 
+formats of reporting cyber security incidents is also publi shed on the 
+website of CERT-In www.cert-in.org.in and will be updated from time to 
+time. 
+
+PDF PAGE 3
+Page 3 of 8 
+ 
+(iii)When required by order/direction of CERT -In, for the purposes of cybe r 
+incident response, protective and  preventive actions related to cyber 
+incidents, the service provider/intermediary/data centre/body corporate is 
+mandated to take action or provide information or any such assistance to 
+CERT-In, which may contribute towards cyber security mitigation actions 
+and enhanced cyber security situational awareness. The order / direction 
+may include the format of the information that is required (up to and 
+including near real-time), and a specified timeframe in which it is required, 
+which should be adhered to and compliance provided to CERT -In, else it 
+would be treat ed as non -compliance of this direction. The service 
+providers, intermediaries, data centres, body corporate and Government 
+organisations shall designate a Point of Contact to interface with CERT-In. 
+The Information relating to a Point of Contact shall be sent to CERT-In in 
+the format specified at Annexure II and shall be updated from time to time. 
+All communications from CERT -In seeking information and providing 
+directions for compliance shall be sent to the said Point of Contact. 
+(iv) All service providers, int ermediaries, data centres , body corporate and 
+Government organisations shall mandatorily enable logs of all their ICT 
+systems and maintain them securely for a rolling period of 180 days  and 
+the same shall be maintained within the Indian jurisdiction . These should 
+be provided to CERT -In along with reporting of any incident or when 
+ordered / directed by CERT-In. 
+(v) Data Centres, Virtual Private Server (VPS) providers, Cloud Service 
+providers and Virtual Private Network Service ( VPN Service) providers, 
+shall be r equired to register the  following accurate information 
+which  must be maintained by them  for a period of 5 years or longer 
+duration as mandated by the law after any cancellation or withdrawal of 
+the registration as the case may be: 
+a. Validated names of subscribers/customers hiring the services 
+b. Period of hire including dates 
+c. IPs allotted to / being used by the members 
+d. Email address and IP address and time stamp used at the time of 
+registration / on-boarding 
+e. Purpose for hiring services 
+f. Validated address and contact numbers 
+g. Ownership pattern of the subscribers / customers hiring services  

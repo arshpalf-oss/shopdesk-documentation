@@ -1,0 +1,146 @@
+PDF PAGE 24
+24  THE GAZETTE OF INDIA : EXTRAORDINARY    [PART II—SEC. 3(i)] 
+ 
+MINISTRY OF ELECTRONICS AND INFORMATION TECHNOLOGY 
+NOTIFICATION 
+New Delhi, the 13th November, 2025 
+ 
+G.S.R. 846(E).––– Whereas draft of the Digital Personal Data Protection Rules, 2025  were 
+published, as required under sub -section (1) of section 40 of the of the Digital Personal Data Protection 
+Act, 2023 (22 of 2023), vide notification of the Government of India in the M inistry of Electronics and 
+Information Technology vide number G.S.R. 02 (E), dated the 3 rd  January, 2025, in the Gazette of India, 
+Extraordinary, Part II, Section 3, Sub -section (i), dated the 3 rd  January, 2025, inviting objections and 
+suggestions from all persons likely to be affected thereby, before the expiry of the period of forty -five days 
+from the date on which copies of the Official Gazette containing the said notification were made available 
+to public; 
+And whereas copies of the said Official Gazette were made available to the public on the 3rd January, 
+2025; 
+And whereas objections and suggestions were received from the public in respect of the said draft 
+rules have been considered by the Central Government; 
+Now, therefore in exercise of powers conferred by sub -sections (1) and (2) of section 40 of the 
+Digital Personal Data Protection Act, 2023 (22 of 2023), the Central Government hereby makes the 
+following rules, namely: — 
+1. Short title and commencement . — (1) These rules may be called the Digital Personal Data Protection 
+Rules, 2025.  
+(2) Rules 1, 2 and 17 to 21 shall come into force on the date of their publication in the Official Gazette. 
+(3) Rule 4 shall come into force one year after the date of publication of this Gazette. 
+(4) Rules 3, 5 to 16, 22 and 23 shall come into force eighteen months after the date of publication 
+of this Gazette. 
+ 2. Definitions. — (1) In these rules, unless the context otherwise requires, – 
+(a) “Act” means the Digital Personal Data Protection Act, 2023 (22 of 2023); 
+(b) “techno-legal measures” means as referred to under rules 20 and 22; 
+(c) “user account” means the online account registered by the Data Principal with the Data Fiduciary, and 
+includes any profiles, pages, handles, email address, mobile number and other similar presences by means 
+of which such Data Principal is able to access the services of such Data Fiduciary; and 
+(d) “verifiable consent” means a consent as specified in rule 10 or 11. 
+(2) The words and expressions used in these rules and not defined, but defined in the Act, shall have the 
+same meanings respectively assigned to them in the Act. 
+3. Notice given by Data Fiduciary to Data Principal . —The notice given by the Data Fiduciary to the 
+Data Principal shall— 
+(a) be presented and be understandable independently of any other information that has been, is or may 
+be made available by such Data Fiduciary; 
+(b) give, in clear and plain language, a fair account of the details necessary to enable the Data Principal 
+to give specific and informed consent for the processing of her personal data, which shall include, 
+at the minimum, — 
+(i) an itemised description of such personal data; and 
+(ii) the specified purpose or purposes of, and specific description of the goods or services to be 
+provided or uses to be enabled by, such processing; and 
+(c) give, the particular communication link for accessing the website or app, or both, of such Data 
+Fiduciary, and a description of other means, if any, using which such Data Principal may— 
+
+PDF PAGE 26
+26  THE GAZETTE OF INDIA : EXTRAORDINARY    [PART II—SEC. 3(i)] 
+ 
+6. Reasonable security safeguards. — (1) A Data Fiduciary shall protect personal data in its possession or 
+under its control, including in respect of any processing undertaken by it or on its behalf by a Data 
+Processor, by taking reasonable security safeguards to prevent personal data breach, which shall include, at 
+the minimum, — 
+(a) appropriate data security measures, such as securing of personal data through encryption, 
+obfuscation, masking or the use of virtual tokens mapped to that personal data; 
+(b) appropriate measures to control access to the computer resources used by such Data Fiduciary or 
+such a Data Processor, wherever applicable; 
+(c) visibility on the accessing of such personal data, through appropriate logs, monitoring and review, 
+for enabling detection of unauthorised access, its investigation and remediation to prevent 
+recurrence; 
+(d) reasonable measures for continued processing in the event of confidentiality, integrity or 
+availability of such personal data being compromised as a result of destruction or loss of access to 
+personal data or otherwise, such as by way of data-backups; 
+(e) for enabling the detection of unauthorised access, its investigation, remediation to prevent 
+recurrence and continued processing in the event of such a compromise, retain such logs and 
+personal data for a period of one year, unless compliance with any law for the time being in force 
+requires otherwise; 
+(f) appropriate provision in the contract entered into between such Data Fiduciary and such a Data 
+Processor, wherever applicable, for taking reasonable security safeguards; and 
+(g) appropriate technical and organisational measures to ensure effective observance of security 
+safeguards. 
+(2) In this rule, the expression “computer resource” shall have the same meaning as is assigned to it in 
+Information Technology Act, 2000 (21 of 2000). 
+7. Intimation of personal data breach . — (1) On becoming aware of any personal data breach, the Data 
+Fiduciary shall, to the best of its knowledge, intimate to each affected Data Principal, in a concise, clear and 
+plain manner and without delay, through her user account or any mode of communication registered by her 
+with the Data Fiduciary, — 
+(a) a description of the breach, including its nature, extent and the timing of its occurrence; 
+(b) the consequences relevant to her, that are likely to arise from the breach; 
+(c) the measures implemented and being implemented by the Data Fiduciary, if any, to mitigate risk; 
+(d) the safety measures that she may take to protect her interests; and 
+(e) business contact information of a person who is able to respond on behalf of the Data Fiduciary, to 
+queries, if any, of the Data Principal. 
+(2) On becoming aware of any personal data breach, the Data Fiduciary shall intimate to the Board, — 
+(a) without delay, a description of the breach, including its nature, extent, timing and location of 
+occurrence and the likely impact; 
+(b) within seventy -two hours of becoming aware of the breach, or within such longer period as the 
+Board may allow on a request made in writing in this behalf, — 
+(i) updated and detailed information in respect of such description; 
+(ii) the broad facts related to the events, circumstances and reasons leading to the breach; 
+(iii) measures implemented or proposed, if any, to mitigate risk;  
+(iv) any findings regarding the person who caused the breach;  
+(v) remedial measures taken to prevent recurrence of such breach; and 
+(vi) a report regarding the intimations given to affected Data Principals. 
+
+PDF PAGE 27
+[भाग II—खण् ड 3(i)] भारत का रािपत्र : असाधारण  27 
+ 
+8. Time period for specified purpose to be deemed as no longer being served. —(1) A Data Fiduciary, 
+who is of such class and is processing personal data for such corresponding purposes as are specified in 
+Third Schedule, shall erase such personal data, unless its retention is necessary for compliance with any law 
+for the time being in force, or, for the corresponding time period specified in the Third Schedule, if the Data 
+Principal neither approaches such Data Fiduciary for the performance of the specified purpose nor exercises 
+her rights in relation to such processing. 
+(2) At least forty -eight hours before completion of the time period for erasure of personal data under this 
+rule, the Data Fiduciary shall inform the Data Principal that such personal data shall be erased upon 
+completion of such period, unless she logs into her user account or otherwise initiates contact with the Data 
+Fiduciary for the performance of the specified purpose or exercises her rights in relation to the processing 
+of such personal data. 
+(3) Without prejudice to sub-rules (1) and (2), a Data Fiduciary shall retain, in respect of any processing of 
+personal data undertaken by it or on its behalf by a Data Processor, such personal data, associated traffic 
+data and other logs of the processing for a minimum period of one year from the date of such processing, 
+for the purposes as specified in the Seventh Schedule, after which the Data Fiduciary shall cause such 
+personal data and logs to be erased, unless further retention is required for compliance with any other law 
+for the time being in force or notified by the Government. 
+Illustration. 
+Case 1: X, a Data Principal purchases an e-book on an e -book platform Y. Once delivery is 
+completed, the specified purpose of processing is served. The platform Y must retain the order details, 
+personal data, and logs of the processing (such as order confirmation, payment, and delivery events) for at 
+least one year from the date of the transaction, even if X deletes her account. 
+Case 2: X, a company engages a cloud service provider C as its Data Processor to host customer 
+records. X as the Data Fiduciary, is required to ensure that the C also retains the data and associated logs 
+for at least one year before erasure, unless any other applicable law requires a longer period. 
+9. Contact information of person to answer questions about processing. — Every Data Fiduciary shall 
+prominently publish on its website or app, and mention in every response to a communication for the 
+exercise of the rights of a Data Principal under the Act, the business contact information of the Data 
+Protection Officer, if applicable, or a person who is able to answer on behalf of the Data Fiduciary the 
+questions of the Data Principal about the processing of her personal data. 
+10. Verifiable consent for processing of personal data of child. —(1) A Data Fiduciary shall adopt 
+appropriate technical and organisational measures to ensure that verifiable consent of the parent is obtained 
+before the processing of any personal data of a child and shall observe due diligence, for checking that the 
+individual identifying herself as the parent is an adult who is identifiable if required in connection with 
+compliance with any law for the time being in force in India, by reference to— 
+(a) reliable details of identity and age of the individual available with the Data Fiduciary; or 
+(b) details of identity and age, voluntarily provided — 
+(i) by the individual; or  
+(ii) through a virtual token mapped to such details, which is issued by an authorised entity. 
+(2) In this rule, the expression— 
+(a) “adult” shall mean an individual who has completed the age of eighteen years; 
+(b) “authorised entity" shall mean —  
+(i) an entity entrusted by law or by the Central Government or by the State Government with 
+the issuance of details of the identity and age or a virtual token mapped to such details; or  

@@ -1,0 +1,139 @@
+{
+  "package": "shop desk complete engineering pack",
+  "edition": "1.0",
+  "date": "2026-10-26",
+  "scope": "Documentation and prompt only; no new application implementation/deployment or legal certification.",
+  "excluded": "This manifest does not hash itself, the enclosing ZIP or its external checksum. Internal publishing/research scripts and downloaded full PDFs are not deliverables.",
+  "files": [
+    {
+      "path": "ARCHITECTURE_AND_BUILD_GUIDE.md",
+      "bytes": 42696,
+      "sha256": "25228928d21ac78cb8127220588cffcb571b07785cc50734c0aa86e809ff34cf"
+    },
+    {
+      "path": "DOCUMENT_VALIDATION.md",
+      "bytes": 2055,
+      "sha256": "d3ec3ca8ccf0f2212508acf9a58b1c36c274f20039bf6067a577536403f22157"
+    },
+    {
+      "path": "INDIA_LEGAL_AND_RELEASE_MATRIX.md",
+      "bytes": 32035,
+      "sha256": "7d6387b3ddded6c8b5c2d16638b0049903d6105b29ed50a0ac178daff445130d"
+    },
+    {
+      "path": "MASTER_IMPLEMENTATION_PROMPT.md",
+      "bytes": 47166,
+      "sha256": "7a91be83f6c609b8547888cb9c1b23be5012db4b549c2bedfcdd9f4af6613e46"
+    },
+    {
+      "path": "MASTER_IMPLEMENTATION_PROMPT.txt",
+      "bytes": 47166,
+      "sha256": "7a91be83f6c609b8547888cb9c1b23be5012db4b549c2bedfcdd9f4af6613e46"
+    },
+    {
+      "path": "PRODUCT_OVERVIEW_AND_USER_GUIDE.md",
+      "bytes": 23361,
+      "sha256": "3adf566a85cfd09ed6cc5a78dd068c6b42bf198c18f52b8871422f89f04aac23"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5953,
+      "sha256": "aee881299cdd3441d9a8c1198924f3560f02f7019a99fcd7994509c23701bceb"
+    },
+    {
+      "path": "REFERENCE_SOURCES.md",
+      "bytes": 6882,
+      "sha256": "56f826b03e7ef7197a164190dd03161a86645c537b6ea51466dbd705ab3003ab"
+    },
+    {
+      "path": "SHOP-DESK-ENGINEERING-BLUEPRINT.docx",
+      "bytes": 244646,
+      "sha256": "a40decdb9072aa1ef458ed4e94547549dbeedb2d830a2848b849bdd7b91602c1"
+    },
+    {
+      "path": "SHOP-DESK-ENGINEERING-BLUEPRINT.html",
+      "bytes": 276380,
+      "sha256": "fcafab2c3e60e9f1b5ad4f309e5d3fefc0b7b61bff31344536480b9ce2ccac41"
+    },
+    {
+      "path": "TEST_ACCEPTANCE_AND_TRACEABILITY.md",
+      "bytes": 18732,
+      "sha256": "5e495bed74945afd39c0f124dc283721a29b2b0c8888909233c987462f5913c2"
+    },
+    {
+      "path": "VERCEL_ATLAS_OPERATIONS.md",
+      "bytes": 18441,
+      "sha256": "2a5a5b56f7f9c13c53e9dbaed4d11591cff1f3aed6c2d43916677da13f4851fe"
+    },
+    {
+      "path": "diagrams/architecture.png",
+      "bytes": 126453,
+      "sha256": "d5c79d4245001bf0cd6c4632f47e65cb59eb9dfb01e4d2f8de0f058f0f02ba9b"
+    },
+    {
+      "path": "diagrams/architecture.svg",
+      "bytes": 6531,
+      "sha256": "0fb5d9c3d8297b9d8479a467a0f2e609a6022cc2ac07446faf15c96c59433378"
+    },
+    {
+      "path": "reference/Legal-Notes-user-supplied.txt",
+      "bytes": 30930,
+      "sha256": "ade7d2b1abfb979d28b448f36509eaa3bb253a2ff14ff234c8b96ce9c9e27a14"
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 1916,
+      "sha256": "63d40016fb8802c388aa804b69ff39e4c7d1ab3a47877c145ce84333c875de3c"
+    },
+    {
+      "path": "research/additional-source-observations.json",
+      "bytes": 1018,
+      "sha256": "8ed365ecb5376218530a6e3362394aab0172eea6c248f1cf823d04d770a7ea61"
+    },
+    {
+      "path": "research/cert-in-excerpts.txt",
+      "bytes": 4921,
+      "sha256": "1b409eeca6a156f1ddfe770a44da08d1cae8d57c1ac04eeb57ce0b6a116528c5"
+    },
+    {
+      "path": "research/document-validation.json",
+      "bytes": 5373,
+      "sha256": "fd790f847c78cd09d554755d3e7a753f5c1b7b6ca7cec166db8f325449b23a73"
+    },
+    {
+      "path": "research/dpdp-rules-excerpts.txt",
+      "bytes": 11367,
+      "sha256": "6bd70fe9d58841539c26907dfbb4d5cb0cbe402614583ac97e197db1f4094799"
+    },
+    {
+      "path": "research/drugs-rules-excerpts.txt",
+      "bytes": 6301,
+      "sha256": "b0f37d2b1404ce7958091b12ceef03d46eb26157e90756aa30216d8bcdaeda3f"
+    },
+    {
+      "path": "research/html-interaction-tests.json",
+      "bytes": 913,
+      "sha256": "65e9413d2c7cdc59108a5802a2cfdf787fe71985b186ba430a4d07ddb0e600ae"
+    },
+    {
+      "path": "research/income-rules-2026-excerpts.txt",
+      "bytes": 4071,
+      "sha256": "c7bb9521f4629c1c40c5d67df12a9a0d14ec1b6deb956651f7da7b7171d38a86"
+    },
+    {
+      "path": "research/income-rules-2026-rule46.txt",
+      "bytes": 11987,
+      "sha256": "6061f05031404c5d4b8d08da34df21d6b24d28ca0267e1a5473466249d78ccef"
+    },
+    {
+      "path": "research/primary-source-retrieval.json",
+      "bytes": 2708,
+      "sha256": "982e7ddca3f200ba8974707be1b114d8992614146896c9a610dfa5da8f05107c"
+    },
+    {
+      "path": "research/source-register.json",
+      "bytes": 13128,
+      "sha256": "7a27ab7e8d243e90391d27cba3562c2d6fa383355a095121f552e87cb329e292"
+    }
+  ]
+}

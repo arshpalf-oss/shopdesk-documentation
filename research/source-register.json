@@ -1,0 +1,268 @@
+[
+  {
+    "reference": "S01",
+    "title": "MongoDB documentation — transactions",
+    "url": "https://www.mongodb.com/docs/drivers/node/current/crud/transactions/",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S02",
+    "title": "Vercel documentation — function limits",
+    "url": "https://vercel.com/docs/functions/limitations",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S03",
+    "title": "CBIC — CGST Rule 49: bill of supply",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule49_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S04",
+    "title": "CBIC — CGST Rule 46: tax-invoice particulars",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S05",
+    "title": "GST Council/CBIC — Notification 78/2020: HSN detail",
+    "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S06",
+    "title": "CBIC — Notification 12/2017–CT(R), including veterinary healthcare entry",
+    "url": "https://cbic-gst.gov.in/hindi/pdf/central-tax-rate/Notification12-CGST.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S07",
+    "title": "CBIC — IGST Section 10: goods place of supply",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_IGST_Act/active/chapterv/section10_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S08",
+    "title": "GST Council — Circular 209/03/2024",
+    "url": "https://gstcouncil.gov.in/node/4989",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S09",
+    "title": "CBIC — CGST Section 15: value/discounts and amendment notes",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter4/section15_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S10",
+    "title": "CBIC — CGST Section 34: credit/debit notes and amendment notes",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section34_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S11",
+    "title": "GST Council — e-invoice Notification 10/2023 listing",
+    "url": "https://www.gstcouncil.gov.in/node/4365",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S12",
+    "title": "GSTN — 30-day IRP reporting advisory",
+    "url": "https://www.gst.gov.in/newsandupdates/read/543",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S13",
+    "title": "GSTN — proposed recipient-generated RCM self-invoice advisory",
+    "url": "https://www.gst.gov.in/newsandupdates/read/678",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S14",
+    "title": "CBIC — CGST Rule 138: e-way information and conditions",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S15",
+    "title": "CBIC — CGST Section 16: input-credit conditions",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S16",
+    "title": "CBIC — CGST Rule 56: accounts, stock and electronic records",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter7/rule56_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S17",
+    "title": "CBIC — CGST Section 36: retention of accounts",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S18",
+    "title": "CBIC — CGST Rule 57: electronic backup and record production",
+    "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter7/rule57_v1.00.html",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S19",
+    "title": "Income-tax Department — notified Income-tax Rules 2026",
+    "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S20",
+    "title": "India Code — Companies accounts rules / section 128 reference",
+    "url": "https://www.indiacode.nic.in/handle/123456789/1362/simple-search?query=Chapter+IX+-+The+Companies+%28Accounts%29+Rules%2C+2014.+&searchradio=rules",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S21",
+    "title": "ICAI — revised 2024 accounting audit-trail implementation guide",
+    "url": "https://eirc-icai.org/uploads/background_materials/Revised%202024_Implementation%20Guide%20on%20Reporting%20of%20Audit%20Trail%20(1)_1712114860.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S22",
+    "title": "Income-tax Department — Act 2025, Section 186 (2026 page)",
+    "url": "https://www.incometaxindia.gov.in/w/section-186-41",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S23",
+    "title": "CDSCO — Drugs Rules 1945, retrieved 2022 compilation",
+    "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules,%201945%20(1).pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S24",
+    "title": "Central Bureau of Narcotics — official starting point for specialist review",
+    "url": "https://narcoticsindia.nic.in/",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S25",
+    "title": "Consumer Affairs — packaged-commodities compilation",
+    "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S26",
+    "title": "NPPA — DPCO source/amendment listing",
+    "url": "https://nppa.gov.in/en/drugspricescontrolorder2013",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S27",
+    "title": "NPPA — 30 June 2026 DPCO amendment, S.O. 3516(E)",
+    "url": "https://nppa.gov.in/storage/uploads/pdf/dpco-amend-2026-57e460458980dab7263beda9399d68bc.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S28",
+    "title": "CPCB — Bio-Medical Waste Management Rules 2016",
+    "url": "https://cpcb.gov.in/uploads/Projects/Bio-Medical-Waste/Bio-medical_Waste_Management_Rules_2016.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S29",
+    "title": "MeitY — DPDP Act commencement notification",
+    "url": "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S30",
+    "title": "MeitY — Digital Personal Data Protection Rules 2025",
+    "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S31",
+    "title": "MeitY — December 2025 DPDP Rules corrigenda",
+    "url": "https://www.meity.gov.in/static/uploads/2025/12/3c7ebbae0e5456f493f486e6845df86b.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S32",
+    "title": "India Code — SPDI Rules 2011 primary-file reference (fetch/transition review pending)",
+    "url": "https://www.indiacode.nic.in/ViewFileUploaded?path=AC_CEN_45_76_00001_200021_1517807324077%2Frulesindividualfile%2F&file=GSR313E_10511%281%29_0.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S33",
+    "title": "CERT-In — directions dated 28 April 2022",
+    "url": "https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S34",
+    "title": "India Code — Bharatiya Sakshya Adhiniyam 2023",
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/20063/1/a2023-47.pdf",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S35",
+    "title": "MCA — Companies (Accounts) Fourth Amendment Rules 2022",
+    "url": "https://www.mca.gov.in/bin/ebook/dms/getdocument?doc=MTcyODIyOTI0&docCategory=Notifications&type=open",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S36",
+    "title": "Vercel documentation — commercial-plan/fair-use conditions",
+    "url": "https://vercel.com/docs/limits/fair-use-guidelines",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S37",
+    "title": "MongoDB documentation — Atlas IP access lists",
+    "url": "https://www.mongodb.com/docs/atlas/security/ip-access-list/",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  },
+  {
+    "reference": "S38",
+    "title": "Vercel documentation — Cron management/authentication",
+    "url": "https://vercel.com/docs/cron-jobs/manage-cron-jobs",
+    "review_cutoff": "2026-10-26",
+    "qualification": "See legal matrix; not legal certification or universal applicability approval."
+  }
+]

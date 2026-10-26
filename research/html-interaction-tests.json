@@ -1,0 +1,34 @@
+{
+  "scope": "Execution of the actual embedded HTML JavaScript against a minimal DOM mock; not a browser/CSS, Word, SaaS runtime, cloud or legal test.",
+  "checks": [
+    {
+      "check": "Initial document displays all chapters",
+      "status": "PASS"
+    },
+    {
+      "check": "No-match search hides all chapters and gives result count",
+      "status": "PASS"
+    },
+    {
+      "check": "Search is case-insensitive and matches actual chapter text",
+      "status": "PASS"
+    },
+    {
+      "check": "Clear restores all chapters",
+      "status": "PASS"
+    },
+    {
+      "check": "Sidebar selection clears search without hiding target",
+      "status": "PASS"
+    },
+    {
+      "check": "Clipboard-denied fallback selects the complete prompt",
+      "status": "PASS"
+    },
+    {
+      "check": "Permitted clipboard receives byte-equivalent prompt text",
+      "status": "PASS"
+    }
+  ],
+  "count": 7
+}

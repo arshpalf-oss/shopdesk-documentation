@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-26",
+  "timezone": "Asia/Calcutta",
+  "income_tax_section_186": {
+    "url": "https://www.incometaxindia.gov.in/w/section-186-41",
+    "status": "official HTML retrieved and read; 2026 page"
+  },
+  "income_tax_gazette_direct_pdf": {
+    "url": "https://egazette.gov.in/WriteReadData/2025/265620.pdf",
+    "status": "direct urllib retrieval failed certificate verification; verification was not bypassed"
+  },
+  "dpdp_corrigenda": {
+    "url": "https://www.meity.gov.in/static/uploads/2025/12/3c7ebbae0e5456f493f486e6845df86b.pdf",
+    "status": "official PDF parsed by page fetch; read corrections to publication wording and other items"
+  },
+  "income_rule_46": {
+    "status": "full rule read on PDF pp37\u201338; adjacent p39 saved"
+  },
+  "drugs_rules": {
+    "status": "2022 compilation heading confirmed; relevant excerpts PDF pp42,43,46; not all current amendments verified"
+  },
+  "qualification": "Research evidence, not exhaustive legal due diligence or professional approval."
+}

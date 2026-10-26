@@ -131,6 +131,12 @@ export function createApp({ store, config, webDir }) {
       express.static(dist, {
         setHeaders(res, filePath) {
           if (filePath.endsWith('index.html')) res.setHeader('Cache-Control', 'no-store');
+          // Archives placed in the web root (e.g. release packages) are offered as
+          // downloads rather than being rendered inline.
+          if (/\.(zip|tgz|gz)$/i.test(filePath)) {
+            res.setHeader('Content-Disposition', `attachment; filename="${path.basename(filePath)}"`);
+            res.setHeader('Cache-Control', 'no-store');
+          }
         },
       })
     );

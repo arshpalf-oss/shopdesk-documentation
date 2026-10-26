@@ -6,6 +6,7 @@
  * adapts this same app to a Node serverless function (see docs/DEPLOYMENT.md).
  */
 
+import path from 'node:path';
 import { createApp } from './app.js';
 import { createStore } from './store/index.js';
 import { loadConfig } from './config.js';
@@ -25,14 +26,15 @@ const server = app.listen(config.port, config.host, () => {
   console.log(`[shop desk] store driver: ${driver} (${location})`);
   console.log(`[shop desk] environment: ${config.env}`);
   if (config.setupTokenGenerated) {
-    console.log('[shop desk] first-run setup token (also stored in .data/setup-token.txt):');
+    const tokenPath = path.join(config.dataDir, 'setup-token.txt');
+    console.log(`[shop desk] first-run setup token (also stored in ${tokenPath}):`);
     console.log(`             ${config.setupToken}`);
   }
   if (config.exposeSetupToken) {
     console.log('[shop desk] DEV ONLY: the setup token is exposed at GET /api/v1/setup/status');
   }
   tenants.countDocuments({}).then((count) => {
-    console.log(`[shop desk] tenants: ${count}${count === 0 ? ' — complete /setup to create the first empty workspace' : ''}`);
+    console.log(`[shop desk] tenants: ${count}${count === 0 ? ' — open the app in a browser and complete the setup form on the sign-in screen' : ''}`);
   });
 });
 

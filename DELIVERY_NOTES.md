@@ -34,6 +34,11 @@ same-origin check keeps working behind the preview proxy. It adds no business lo
 | `/bundle.txt` | every source file concatenated as one text document |
 | `/files/<path>` | one source file as `text/plain` (path traversal rejected) |
 
+## Downloading and running it
+
+Step-by-step instructions for a local machine, including Windows shells and the
+fallback download routes, are in [`INSTALL.md`](INSTALL.md).
+
 ## Demo sign-in
 
 The preview runs on the `data-demo` workspace, which is **not** the default for a new
@@ -48,17 +53,17 @@ Tenant: **The Good Vets**, branch: **Main branch**.
 
 ## Package
 
-`shopdesk-app.zip` — 89 entries, 259,616 bytes, excludes `node_modules`, `dist`,
+`shopdesk-app.zip` — 89 entries, 259,660 bytes, excludes `node_modules`, `dist`,
 `data-demo`.
 
 ```
-SHA-256  a222bd9d21db5cd582b05d7bb1135118e20c52e12a75858449ab9053ecbaf67d
+SHA-256  8b1327cf5d279c2a42261c668f1ccc705154a9262710f37fa3b4306010326341
 ```
 
 ```bash
 unzip shopdesk-app.zip && cd app
 npm ci && npm run build
-SHOPDESK_DATA_DIR=./data npm start      # then open http://localhost:3000/setup
+SHOPDESK_DATA_DIR=./data npm start      # then open http://localhost:3000 (sign-in screen becomes setup)
 ```
 
 ## Verification performed on this branch
